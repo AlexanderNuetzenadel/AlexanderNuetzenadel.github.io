@@ -19,6 +19,8 @@ body {
     margin: 0
 }
 
+#map { height: 180px; }
+
 article,
 aside,
 details,
