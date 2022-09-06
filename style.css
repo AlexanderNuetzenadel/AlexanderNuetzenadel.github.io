@@ -1,0 +1,2032 @@
+/* jaico.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.jaico-serif {
+    font-family: serif
+}
+
+.jaico-sans-serif {
+    font-family: sans-serif
+}
+
+.jaico-cursive {
+    font-family: cursive
+}
+
+.jaico-monospace {
+    font-family: monospace
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.jaico-wide {
+    letter-spacing: 1px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.jaico-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.jaico-table,
+.jaico-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.jaico-table-all {
+    border: 1px solid #ccc
+}
+
+.jaico-bordered tr,
+.jaico-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.jaico-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.jaico-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.jaico-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.jaico-hoverable tbody tr:hover,
+.jaico-ul.jaico-hoverable li:hover {
+    background-color: #ccc
+}
+
+.jaico-centered tr th,
+.jaico-centered tr td {
+    text-align: center
+}
+
+.jaico-table td,
+.jaico-table th,
+.jaico-table-all td,
+.jaico-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.jaico-table th:first-child,
+.jaico-table td:first-child,
+.jaico-table-all th:first-child,
+.jaico-table-all td:first-child {
+    padding-left: 16px
+}
+
+.jaico-btn,
+.jaico-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.jaico-button-margin-right {
+    margin-right: 10px;
+}
+
+.jaico-button-bar {
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+
+.jaico-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.jaico-btn,
+.jaico-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.jaico-disabled,
+.jaico-btn:disabled,
+.jaico-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.jaico-disabled *,
+:disabled * {
+    pointer-events: none
+}
+
+.jaico-btn.jaico-disabled:hover,
+.jaico-btn:disabled:hover {
+    box-shadow: none
+}
+
+.jaico-badge,
+.jaico-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.jaico-badge {
+    border-radius: 50%
+}
+
+.jaico-scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+  
+    .jaico-scrolling-card {
+      display: inline-block;
+      
+      
+    }
+  
+
+.jaico-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.jaico-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.jaico-ul li:last-child {
+    border-bottom: none
+}
+
+.jaico-tooltip,
+.jaico-display-container {
+    position: relative
+}
+
+.jaico-tooltip .jaico-text {
+    display: none
+}
+
+.jaico-tooltip:hover .jaico-text {
+    display: inline-block
+}
+
+.jaico-ripple:active {
+    opacity: 0.5
+}
+
+.jaico-ripple {
+    transition: opacity 0s
+}
+
+.jaico-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.jaico-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.jaico-dropdown-click,
+.jaico-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.jaico-dropdown-hover:hover .jaico-dropdown-content {
+    display: block
+}
+
+.jaico-dropdown-hover:first-child,
+.jaico-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.jaico-dropdown-hover:hover>.jaico-button:first-child,
+.jaico-dropdown-click:hover>.jaico-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.jaico-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.jaico-check,
+.jaico-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.jaico-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.jaico-bar-block .jaico-dropdown-hover,
+.jaico-bar-block .jaico-dropdown-click {
+    width: 100%
+}
+
+.jaico-bar-block .jaico-dropdown-hover .jaico-dropdown-content,
+.jaico-bar-block .jaico-dropdown-click .jaico-dropdown-content {
+    min-width: 100%
+}
+
+.jaico-bar-block .jaico-dropdown-hover .jaico-button,
+.jaico-bar-block .jaico-dropdown-click .jaico-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.jaico-main,
+#main {
+    transition: margin-left .4s
+}
+
+.jaico-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.jaico-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.jaico-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.jaico-center .jaico-bar {
+    display: inline-block;
+    width: auto
+}
+
+.jaico-center-padding {
+    padding: 25px 0;
+}
+
+.jaico-bar .jaico-bar-item {
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    
+}
+
+.jaico-bar .jaico-dropdown-hover,
+.jaico-bar .jaico-dropdown-click {
+    position: static;
+    float: left
+}
+
+.jaico-bar .jaico-button {
+    white-space: normal
+}
+
+.jaico-bar-block .jaico-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.jaico-bar-block.jaico-center .jaico-bar-item {
+    text-align: center
+}
+
+.jaico-block {
+    display: block;
+    width: 100%
+}
+
+.jaico-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.jaico-container:after,
+.jaico-container:before,
+.jaico-panel:after,
+.jaico-panel:before,
+.jaico-row:after,
+.jaico-row:before,
+.jaico-row-padding:after,
+.jaico-row-padding:before,
+.jaico-cell-row:before,
+.jaico-cell-row:after,
+.jaico-clear:after,
+.jaico-clear:before,
+.jaico-bar:before,
+.jaico-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+.jaico-col,
+.jaico-half,
+.jaico-third,
+.jaico-twothird,
+.jaico-threequarter,
+.jaico-quarter {
+    float: left;
+    width: 100%
+}
+
+.jaico-col.s1 {
+    width: 8.33333%
+}
+
+.jaico-col.s2 {
+    width: 16.66666%
+}
+
+.jaico-col.s3 {
+    width: 24.99999%
+}
+
+.jaico-col.s4 {
+    width: 33.33333%
+}
+
+.jaico-col.s5 {
+    width: 41.66666%
+}
+
+.jaico-col.s6 {
+    width: 49.99999%
+}
+
+.jaico-col.s7 {
+    width: 58.33333%
+}
+
+.jaico-col.s8 {
+    width: 66.66666%
+}
+
+.jaico-col.s9 {
+    width: 74.99999%
+}
+
+.jaico-col.s10 {
+    width: 83.33333%
+}
+
+.jaico-col.s11 {
+    width: 91.66666%
+}
+
+.jaico-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width:601px) {
+    .jaico-col.m1 {
+        width: 8.33333%
+    }
+
+    .jaico-col.m2 {
+        width: 16.66666%
+    }
+
+    .jaico-col.m3,
+    .jaico-quarter {
+        width: 24.99999%
+    }
+
+    .jaico-col.m4,
+    .jaico-third {
+        width: 33.33333%
+    }
+
+    .jaico-col.m5 {
+        width: 41.66666%
+    }
+
+    .jaico-col.m6,
+    .jaico-half {
+        width: 49.99999%
+    }
+
+    .jaico-col.m7 {
+        width: 58.33333%
+    }
+
+    .jaico-col.m8,
+    .jaico-twothird {
+        width: 66.66666%
+    }
+
+    .jaico-col.m9,
+    .jaico-threequarter {
+        width: 74.99999%
+    }
+
+    .jaico-col.m10 {
+        width: 83.33333%
+    }
+
+    .jaico-col.m11 {
+        width: 91.66666%
+    }
+
+    .jaico-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width:993px) {
+    .jaico-col.l1 {
+        width: 8.33333%
+    }
+
+    .jaico-col.l2 {
+        width: 16.66666%
+    }
+
+    .jaico-col.l3 {
+        width: 24.99999%
+    }
+
+    .jaico-col.l4 {
+        width: 33.33333%
+    }
+
+    .jaico-col.l5 {
+        width: 41.66666%
+    }
+
+    .jaico-col.l6 {
+        width: 49.99999%
+    }
+
+    .jaico-col.l7 {
+        width: 58.33333%
+    }
+
+    .jaico-col.l8 {
+        width: 66.66666%
+    }
+
+    .jaico-col.l9 {
+        width: 74.99999%
+    }
+
+    .jaico-col.l10 {
+        width: 83.33333%
+    }
+
+    .jaico-col.l11 {
+        width: 91.66666%
+    }
+
+    .jaico-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.jaico-rest {
+    overflow: hidden
+}
+
+.jaico-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.jaico-content,
+.jaico-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.jaico-content {
+    max-width: 980px
+}
+
+.jaico-auto {
+    max-width: 1140px
+}
+
+.jaico-cell-row {
+    display: table;
+    width: 100%
+}
+
+.jaico-cell {
+    display: table-cell
+}
+
+.jaico-cell-top {
+    vertical-align: top
+}
+
+.jaico-cell-middle {
+    vertical-align: middle
+}
+
+.jaico-cell-bottom {
+    vertical-align: bottom
+}
+
+.jaico-hide {
+    display: none !important
+}
+
+.jaico-show-block,
+.jaico-show {
+    display: block !important
+}
+
+.jaico-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width:1205px) {
+    .jaico-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width:600px) {
+    .jaico-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .jaico-modal {
+        padding-top: 30px
+    }
+
+    .jaico-dropdown-hover.jaico-mobile .jaico-dropdown-content,
+    .jaico-dropdown-click.jaico-mobile .jaico-dropdown-content {
+        position: relative
+    }
+
+    .jaico-hide-small {
+        display: none !important
+    }
+
+    .jaico-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .jaico-bar-item.jaico-mobile,
+    .jaico-dropdown-hover.jaico-mobile,
+    .jaico-dropdown-click.jaico-mobile {
+        text-align: center
+    }
+
+    .jaico-dropdown-hover.jaico-mobile,
+    .jaico-dropdown-hover.jaico-mobile .jaico-btn,
+    .jaico-dropdown-hover.jaico-mobile .jaico-button,
+    .jaico-dropdown-click.jaico-mobile,
+    .jaico-dropdown-click.jaico-mobile .jaico-btn,
+    .jaico-dropdown-click.jaico-mobile .jaico-button {
+        width: 100%
+    }
+}
+
+@media (max-width:768px) {
+    .jaico-modal-content {
+        width: 500px
+    }
+
+    .jaico-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width:993px) {
+    .jaico-modal-content {
+        width: 900px
+    }
+
+    .jaico-hide-large {
+        display: none !important
+    }
+
+    .jaico-sidebar.jaico-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .jaico-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width:992px) {
+    .jaico-sidebar.jaico-collapse {
+        display: none
+    }
+
+    .jaico-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .jaico-auto {
+        max-width: 100%
+    }
+}
+
+.jaico-top,
+.jaico-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.jaico-top {
+    top: 0
+}
+
+.jaico-bottom {
+    bottom: 0
+}
+
+.jaico-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.jaico-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.jaico-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.jaico-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.jaico-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.jaico-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.jaico-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.jaico-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.jaico-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.jaico-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.jaico-display-container:hover .jaico-display-hover {
+    display: block
+}
+
+.jaico-display-container:hover span.jaico-display-hover {
+    display: inline-block
+}
+
+.jaico-display-hover {
+    display: none
+}
+
+.jaico-display-position {
+    position: absolute
+}
+
+.jaico-circle {
+    border-radius: 50%
+}
+
+.jaico-round-small {
+    border-radius: 2px
+}
+
+.jaico-round,
+.jaico-round-medium {
+    border-radius: 4px
+}
+
+.jaico-round-large {
+    border-radius: 8px
+}
+
+.jaico-round-xlarge {
+    border-radius: 16px
+}
+
+.jaico-round-xxlarge {
+    border-radius: 32px
+}
+
+.jaico-row-padding,
+.jaico-row-padding>.jaico-half,
+.jaico-row-padding>.jaico-third,
+.jaico-row-padding>.jaico-twothird,
+.jaico-row-padding>.jaico-threequarter,
+.jaico-row-padding>.jaico-quarter,
+.jaico-row-padding>.jaico-col {
+    padding: 0 8px
+}
+
+.jaico-container,
+.jaico-panel {
+    padding: 0.01em 16px
+}
+
+.jaico-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.jaico-code,
+.jaico-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.jaico-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.jaico-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.jaico-card,
+.jaico-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.jaico-card-4,
+.jaico-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.jaico-spin {
+    animation: jaico-spin 2s infinite linear
+}
+
+@keyframes jaico-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.jaico-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.jaico-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.jaico-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.jaico-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.jaico-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.jaico-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.jaico-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.jaico-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.jaico-animate-input:focus {
+    width: 100% !important
+}
+
+.jaico-opacity,
+.jaico-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.jaico-opacity-off,
+.jaico-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.jaico-opacity-max {
+    opacity: 0.25
+}
+
+.jaico-opacity-min {
+    opacity: 0.75
+}
+
+.jaico-greyscale-max,
+.jaico-grayscale-max,
+.jaico-hover-greyscale:hover,
+.jaico-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.jaico-greyscale,
+.jaico-grayscale {
+    filter: grayscale(75%)
+}
+
+.jaico-greyscale-min,
+.jaico-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.jaico-sepia {
+    filter: sepia(75%)
+}
+
+.jaico-sepia-max,
+.jaico-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.jaico-sepia-min {
+    filter: sepia(50%)
+}
+
+.jaico-tiny {
+    font-size: 10px !important
+}
+
+.jaico-small {
+    font-size: 12px !important
+}
+
+.jaico-medium {
+    font-size: 15px !important
+}
+
+.jaico-large {
+    font-size: 18px !important
+}
+
+.jaico-xlarge {
+    font-size: 24px !important
+}
+
+.jaico-xxlarge {
+    font-size: 36px !important
+}
+
+.jaico-xxxlarge {
+    font-size: 48px !important
+}
+
+.jaico-jumbo {
+    font-size: 64px !important
+}
+
+.jaico-left-align {
+    text-align: left !important
+}
+
+.jaico-right-align {
+    text-align: right !important
+}
+
+
+.jaico-justify {
+    text-align: justify !important
+}
+
+.jaico-center {
+    text-align: center !important
+}
+
+.jaico-border-0 {
+    border: 0 !important
+}
+
+.jaico-border {
+    border: 1px solid #ccc !important
+}
+
+.jaico-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.jaico-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+.jaico-border-left {
+    border-left: 1px solid #ccc !important
+}
+
+.jaico-border-right {
+    border-right: 1px solid #ccc !important
+}
+
+.jaico-topbar {
+    border-top: 6px solid #ccc !important
+}
+
+.jaico-bottombar {
+    border-bottom: 6px solid #ccc !important
+}
+
+.jaico-leftbar {
+    border-left: 6px solid #ccc !important
+}
+
+.jaico-rightbar {
+    border-right: 6px solid #ccc !important
+}
+
+.jaico-section,
+.jaico-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.jaico-margin {
+    margin: 16px !important
+}
+
+.jaico-margin-top {
+    margin-top: 16px !important
+}
+
+.jaico-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.jaico-margin-left {
+    margin-left: 16px !important
+}
+
+.jaico-margin-right {
+    margin-right: 16px !important
+}
+
+.jaico-padding-small {
+    padding: 4px 8px !important
+}
+
+.jaico-padding {
+    padding: 8px 16px !important
+}
+
+.jaico-padding-large {
+    padding: 12px 24px !important
+}
+
+.jaico-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.jaico-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+}
+
+.jaico-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.jaico-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+}
+
+.jaico-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.jaico-padding-top-64 {
+    padding-top: 64px !important
+}
+
+.jaico-padding-top-48 {
+    padding-top: 48px !important
+}
+
+.jaico-padding-top-32 {
+    padding-top: 32px !important
+}
+
+.jaico-padding-top-24 {
+    padding-top: 24px !important
+}
+
+.jaico-left {
+    float: left !important
+}
+
+.jaico-right {
+    float: right !important
+}
+
+.jaico-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.jaico-transparent,
+.jaico-hover-none:hover {
+    background-color: transparent !important
+}
+
+.jaico-hover-none:hover {
+    box-shadow: none !important
+}
+
+/* Colors */
+.jaico-amber,
+.jaico-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+}
+
+.jaico-aqua,
+.jaico-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+}
+
+.jaico-blue,
+.jaico-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+}
+
+.jaico-light-blue,
+.jaico-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+}
+
+.jaico-brown,
+.jaico-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+}
+
+.jaico-cyan,
+.jaico-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+}
+
+.jaico-blue-grey,
+.jaico-hover-blue-grey:hover,
+.jaico-blue-gray,
+.jaico-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+}
+
+.jaico-green,
+.jaico-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+}
+
+.jaico-light-green,
+.jaico-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+}
+
+.jaico-indigo,
+.jaico-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+}
+
+.jaico-khaki,
+.jaico-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+}
+
+.jaico-lime,
+.jaico-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+}
+
+.jaico-orange,
+.jaico-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+.jaico-deep-orange,
+.jaico-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+}
+
+.jaico-pink,
+.jaico-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+}
+
+.jaico-purple,
+.jaico-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+}
+
+.jaico-deep-purple,
+.jaico-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+}
+
+.jaico-red,
+.jaico-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.jaico-sand,
+.jaico-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+}
+
+.jaico-teal,
+.jaico-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+}
+
+.jaico-yellow,
+.jaico-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.jaico-white,
+.jaico-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.jaico-black,
+.jaico-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.jaico-grey,
+.jaico-hover-grey:hover,
+.jaico-gray,
+.jaico-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}
+
+.jaico-light-grey,
+.jaico-hover-light-grey:hover,
+.jaico-light-gray,
+.jaico-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.jaico-dark-grey,
+.jaico-hover-dark-grey:hover,
+.jaico-dark-gray,
+.jaico-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+}
+
+.jaico-pale-red,
+.jaico-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+}
+
+.jaico-pale-green,
+.jaico-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+}
+
+.jaico-pale-yellow,
+.jaico-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+}
+
+.jaico-pale-blue,
+.jaico-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
+
+.jaico-text-amber,
+.jaico-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.jaico-text-aqua,
+.jaico-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.jaico-text-blue,
+.jaico-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.jaico-text-light-blue,
+.jaico-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.jaico-text-brown,
+.jaico-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.jaico-text-cyan,
+.jaico-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.jaico-text-blue-grey,
+.jaico-hover-text-blue-grey:hover,
+.jaico-text-blue-gray,
+.jaico-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.jaico-text-green,
+.jaico-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.jaico-text-light-green,
+.jaico-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.jaico-text-indigo,
+.jaico-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.jaico-text-khaki,
+.jaico-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.jaico-text-lime,
+.jaico-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.jaico-text-orange,
+.jaico-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.jaico-text-deep-orange,
+.jaico-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.jaico-text-pink,
+.jaico-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.jaico-text-purple,
+.jaico-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.jaico-text-deep-purple,
+.jaico-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.jaico-text-red,
+.jaico-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.jaico-text-sand,
+.jaico-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.jaico-text-teal,
+.jaico-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.jaico-text-yellow,
+.jaico-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.jaico-text-white,
+.jaico-hover-text-white:hover {
+    color: #fff !important
+}
+
+.jaico-text-black,
+.jaico-hover-text-black:hover {
+    color: #000 !important
+}
+
+.jaico-text-grey,
+.jaico-hover-text-grey:hover,
+.jaico-text-gray,
+.jaico-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.jaico-text-light-grey,
+.jaico-hover-text-light-grey:hover,
+.jaico-text-light-gray,
+.jaico-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+}
+
+.jaico-text-dark-grey,
+.jaico-hover-text-dark-grey:hover,
+.jaico-text-dark-gray,
+.jaico-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.jaico-border-amber,
+.jaico-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.jaico-border-aqua,
+.jaico-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.jaico-border-blue,
+.jaico-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.jaico-border-light-blue,
+.jaico-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.jaico-border-brown,
+.jaico-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.jaico-border-cyan,
+.jaico-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.jaico-border-blue-grey,
+.jaico-hover-border-blue-grey:hover,
+.jaico-border-blue-gray,
+.jaico-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.jaico-border-green,
+.jaico-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.jaico-border-light-green,
+.jaico-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.jaico-border-indigo,
+.jaico-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.jaico-border-khaki,
+.jaico-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.jaico-border-lime,
+.jaico-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.jaico-border-orange,
+.jaico-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.jaico-border-deep-orange,
+.jaico-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.jaico-border-pink,
+.jaico-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.jaico-border-purple,
+.jaico-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.jaico-border-deep-purple,
+.jaico-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.jaico-border-red,
+.jaico-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.jaico-border-sand,
+.jaico-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.jaico-border-teal,
+.jaico-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.jaico-border-yellow,
+.jaico-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.jaico-border-white,
+.jaico-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.jaico-border-black,
+.jaico-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.jaico-border-grey,
+.jaico-hover-border-grey:hover,
+.jaico-border-gray,
+.jaico-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.jaico-border-light-grey,
+.jaico-hover-border-light-grey:hover,
+.jaico-border-light-gray,
+.jaico-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.jaico-border-dark-grey,
+.jaico-hover-border-dark-grey:hover,
+.jaico-border-dark-gray,
+.jaico-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.jaico-border-pale-red,
+.jaico-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.jaico-border-pale-green,
+.jaico-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.jaico-border-pale-yellow,
+.jaico-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.jaico-border-pale-blue,
+.jaico-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+}
