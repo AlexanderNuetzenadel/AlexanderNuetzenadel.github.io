@@ -1463,7 +1463,7 @@ a {
 }
 
 .jaico-margin {
-    margin: 16px !important
+    margin: 24px !important
 }
 
 .jaico-margin-top {
@@ -1541,6 +1541,9 @@ a {
 
 .jaico-right {
     float: right !important
+}
+.jaico-left {
+    float: left !important
 }
 
 .jaico-button:hover {
