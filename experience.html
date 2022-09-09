@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>JaicoHerrero Website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+    <title>JaicoHerrero Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="jaico-top">
-  <div class="jaico-bar jaico-white jaico-wide jaico-padding jaico-card">
-    <a href="/index.html" class="jaico-bar-item jaico-button"><img src="/Images/JH_Banner_BlacknWhite.png" height="70px" width="auto">
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="jaico-right jaico-hide-small jaico-center-padding">
-      <a href="/ourTeam.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 120%;">Nosotros</a>
-      <a href="/experience.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 120%;">Experiencia</a>
-      <a href="/associates.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 120%;">Asociados</a>
-      <a href="/contact.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 100%;">CONTACTO</a>
+    <!-- Navbar (sit on top) -->
+    <div class="jaico-top">
+        <div class="jaico-bar jaico-white jaico-wide jaico-padding jaico-cardv jaico-">
+            <a href="/index.html" class="jaico-bar-item jaico-button"><img src="/Images/JH_Banner_BlacknWhite.png"
+                    height="70px" width="auto">
+                <!-- Float links to the right. Hide them on small screens -->
+                <div class="jaico-right jaico-hide-small jaico-center-padding">
+                    <a href="/ourTeam.html"
+                        class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling"
+                        style="font-size: 100%;">NOSOTROS</a>
+                    <a href="/experience.html"
+                        class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling"
+                        style="font-size: 100%;">SECTORES <br> DE
+                        EXPERTISE</a>
+                    <a href="/associates.html"
+                        class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling"
+                        style="font-size: 100%;">ASOCIADOS</a>
+                    <a href="/contact.html"
+                        class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling"
+                        style="font-size: 100%;">CONTACTO</a>
+                </div>
+        </div>
     </div>
-  </div>
-</div>
-<div>
-<div class="jaico-padding-bottom-64 jaico-padding-top-128">
-    <div class="jaico-center">
-      <h2>Experiencia</h2>
-    </div>
-    <button type="button" class="collapsible"> <h3>- Inversiones</h3></button>
-    <div class="content">
-      <p>Sector con alto valor añadido</p>
-    </div>
-    <button type="button" class="collapsible"> <h3>- Empressarial</h3></button>
-    <div class="content">
-      <p>
-         - Proteccion de datos y de gobierno digital <br>
-         - Fusiones y Aquisiciones <br>
-         - Internacionalizaciones <br>
-         - Complica y lucha contra la corrupcion.
-    </p>
-    </div>
-    <button type="button" class="collapsible"> <h3>- Legal</h3></button>
-    <div class="content">
-      <p>Sector con alto valor añadido</p>
-    </div>
-    <button type="button" class="collapsible"> <h3>- Institucional</h3></button>
-<div class="content">
-  <p>Asesoramiento a Gobiernos nacionales y locales, <br> Instituciones y ONGs</p>
-</div>
-</div>
+    <div>
+        <div class="jaico-padding-bottom-64 jaico-padding-top-128">
+            <div class="jaico-center">
+                <h2>Experiencia</h2>
+            </div>
+            <button type="button" class="collapsible">
+                <h3>- Inversiones</h3>
+            </button>
+            <div class="content">
+                <p>Sector con alto valor añadido</p>
+            </div>
+            <button type="button" class="collapsible">
+                <h3>- Empressarial</h3>
+            </button>
+            <div class="content">
+                <p>
+                    - Proteccion de datos y de gobierno digital <br>
+                    - Fusiones y Aquisiciones <br>
+                    - Internacionalizaciones <br>
+                    - Complica y lucha contra la corrupcion.
+                </p>
+            </div>
+            <button type="button" class="collapsible">
+                <h3>- Legal</h3>
+            </button>
+            <div class="content">
+                <p>Sector con alto valor añadido</p>
+            </div>
+            <button type="button" class="collapsible">
+                <h3>- Institucional</h3>
+            </button>
+            <div class="content">
+                <p>Asesoramiento a Gobiernos nacionales y locales, <br> Instituciones y ONGs</p>
+            </div>
+        </div>
 
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-var i;
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-    </script>
-    
-</div>
-</div>
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </div>
+    </div>
 </body>
-
