@@ -338,6 +338,8 @@ a {
     background-color: #ccc
 }
 
+
+
 .jaico-centered tr th,
 .jaico-centered tr td {
     text-align: center
@@ -352,6 +354,8 @@ a {
     text-align: left;
     vertical-align: top
 }
+
+
 
 .jaico-table th:first-child,
 .jaico-table td:first-child,
@@ -1470,6 +1474,27 @@ a {
     margin-top: 16px !important
 }
 
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  
+
 .jaico-margin-bottom {
     margin-bottom: 16px !important
 }
@@ -1485,6 +1510,8 @@ a {
 .jaico-padding-small {
     padding: 4px 8px !important
 }
+
+.jaico-padd
 
 .jaico-padding {
     padding: 8px 16px !important

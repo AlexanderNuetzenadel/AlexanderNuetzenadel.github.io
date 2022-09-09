@@ -17,22 +17,57 @@
       <a href="/ourTeam.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 120%;">Nosotros</a>
       <a href="/experience.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 120%;">Experiencia</a>
       <a href="/associates.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 120%;">Asociados</a>
+      <a href="/contact.html" class="jaico-bar-item jaico-button-bar jaico-button-margin-right jaico-link-styling" style="font-size: 100%;">CONTACTO</a>
     </div>
   </div>
 </div>
 <div>
-<div class="jaico-padding-16">
+<div class="jaico-padding-64">
     <div class="jaico-center">
       <h2>Experiencia</h2>
     </div>
+    <button type="button" class="collapsible"> <h3>- Inversiones</h3></button>
+    <div class="content">
+      <p>Sector con alto valor añadido</p>
+    </div>
+    <button type="button" class="collapsible"> <h3>- Empressarial</h3></button>
+    <div class="content">
+      <p>
+         - Proteccion de datos y de gobierno digital <br>
+         - Fusiones y Aquisiciones <br>
+         - Internacionalizaciones <br>
+         - Complica y lucha contra la corrupcion.
+    </p>
+    </div>
+    <button type="button" class="collapsible"> <h3>- Legal</h3></button>
+    <div class="content">
+      <p>Sector con alto valor añadido</p>
+    </div>
+    <button type="button" class="collapsible"> <h3>- Institucional</h3></button>
+<div class="content">
+  <p>Asesoramiento a Gobiernos nacionales y locales, <br> Instituciones y ONGs</p>
 </div>
-  <div class="jaico-right jaico-padding-32">
-    Phasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodalesPhasellus eget enim eu lectus faucibus <br> vestibulum. Suspendisse sodales
-  </div>
-  <div class="jaico-padding-16 jaico-left">
-   
+</div>
 
-  </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+    
+</div>
 </div>
 </body>
 
