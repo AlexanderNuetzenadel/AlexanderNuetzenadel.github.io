@@ -1444,6 +1444,12 @@ a {
 .jaico-center {
     text-align: center !important
 }
+.jaico-offset-center {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    right: 65%;
+}
 
 .jaico-border-0 {
     border: 0 !important
