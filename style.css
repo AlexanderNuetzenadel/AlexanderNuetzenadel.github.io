@@ -609,7 +609,9 @@ a {
 
 .jaico-bar {
     width: 100%;
-    overflow: hidden
+    overflow: hidden;
+    border-bottom: #000;
+    
 }
 
 .jaico-center .jaico-bar {
@@ -626,7 +628,6 @@ a {
     width: auto;
     border: none;
     display: block;
-    outline: 0;
 
 }
 
