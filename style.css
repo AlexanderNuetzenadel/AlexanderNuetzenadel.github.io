@@ -619,6 +619,17 @@ a {
     width: auto
 }
 
+.jaico-maintenance-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 490%;
+    color: #00ffff;
+    text-shadow: #000 0.3mm 0.3mm;
+    
+    
+
+
+}
+
 .jaico-center-padding {
     padding: 25px 0;
 }
